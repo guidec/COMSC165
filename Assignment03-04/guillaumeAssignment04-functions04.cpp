@@ -35,10 +35,10 @@ using namespace std;
 of division if greater than 7. */
 int getNumber(char uppercaseLetter) {
 
-	return (((toupper(uppercaseLetter)-65)/3+2)) + 
-		(((((toupper(uppercaseLetter) -65)/3) == (6)) || 
-		(((toupper(uppercaseLetter) -65)/3) == (7))) && 
-			(((toupper(uppercaseLetter) - 65) % 3) == 0))*-1 
+	return (((toupper(uppercaseLetter) - 65) / 3 + 2)) +
+		(((((toupper(uppercaseLetter) - 65) / 3) == (6)) ||
+		(((toupper(uppercaseLetter) - 65) / 3) == (7))) &&
+			(((toupper(uppercaseLetter) - 65) % 3) == 0))*-1
 		+ (((toupper(uppercaseLetter) - 65) / 3) > 7)*-1;
 }
 int printNumber(const string& input) {
