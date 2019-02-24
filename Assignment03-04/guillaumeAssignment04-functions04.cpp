@@ -40,7 +40,8 @@ int getNumber(char uppercaseLetter) {
 		(((toupper(uppercaseLetter) - 65) / 3) == (7))) &&
 			(((toupper(uppercaseLetter) - 65) % 3) == 0))*-1
 		+ (((toupper(uppercaseLetter) - 65) / 3) > 7)*-1;
-}
+}
+
 int printNumber(const string& input) {
 
 	char letter;
