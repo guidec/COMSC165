@@ -24,12 +24,10 @@ using namespace std;
 string swapCase(const string& s) {
 
 	string nS;
-	nS = s;
 	
-	for (int i = 0; i < s.size(); i++) {
-		islower(s[i]) ? nS[i] = toupper(nS[i]) : nS[i] = tolower(nS[i]);
+	for (int i = 0; i < s.length(); i++) {
+		islower(s[i]) ? nS += toupper(s[i]) : nS += tolower(s[i]);
 	}
-
 	return nS;
 }
 
@@ -41,7 +39,6 @@ int main()
 	getline(cin, input);
 
 	newString = swapCase(input);
-
 	cout << "The new string is: " << newString << endl;
 
 	return 0;
